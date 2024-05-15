@@ -168,6 +168,11 @@ func collectFromSpec(spec *ebpf.CollectionSpec, cTypes []string, skipGlobalTypes
 		return nil, nil, nil, fmt.Errorf("collect C types: %w", err)
 	}
 
+	m, ok := spec.Maps[".bss"]
+	if ok {
+		types = collectMapTypesSingle(types, m)
+	}
+
 	// Collect map key and value types, unless we've been asked not to.
 	if skipGlobalTypes {
 		return maps, programs, types, nil
@@ -203,17 +208,23 @@ func collectCTypes(types *btf.Spec, names []string) ([]btf.Type, error) {
 	return result, nil
 }
 
+func collectMapTypesSingle(result []btf.Type, m *ebpf.MapSpec) []btf.Type {
+	if m.Key != nil && m.Key.TypeName() != "" {
+		result = append(result, m.Key)
+	}
+
+	if m.Value != nil && m.Value.TypeName() != "" {
+		result = append(result, m.Value)
+	}
+
+	return result
+}
+
 // collectMapTypes returns a list of all types used as map keys or values.
 func collectMapTypes(maps map[string]*ebpf.MapSpec) []btf.Type {
 	var result []btf.Type
 	for _, m := range maps {
-		if m.Key != nil && m.Key.TypeName() != "" {
-			result = append(result, m.Key)
-		}
-
-		if m.Value != nil && m.Value.TypeName() != "" {
-			result = append(result, m.Value)
-		}
+		result = collectMapTypesSingle(result, m)
 	}
 	return result
 }
