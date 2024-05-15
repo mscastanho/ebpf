@@ -10,12 +10,12 @@ import (
 	"path"
 	"time"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/link"
-	"github.com/cilium/ebpf/rlimit"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/link"
+	"github.com/mscastanho/ebpf/rlimit"
 )
 
-//go:generate go run github.com/cilium/ebpf/cmd/bpf2go bpf kprobe_pin.c -- -I../headers
+//go:generate go run github.com/mscastanho/ebpf/cmd/bpf2go bpf kprobe_pin.c -- -I../headers
 
 const (
 	mapKey    uint32 = 0

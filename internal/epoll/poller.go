@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/unix"
 )
 
 // Poller waits for readiness notifications from multiple file descriptors.

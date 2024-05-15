@@ -10,7 +10,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/cilium/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal"
 
 	"golang.org/x/exp/slices"
 )

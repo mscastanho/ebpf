@@ -7,11 +7,11 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/cilium/ebpf/asm"
-	"github.com/cilium/ebpf/btf"
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/kconfig"
-	"github.com/cilium/ebpf/internal/sysenc"
+	"github.com/mscastanho/ebpf/asm"
+	"github.com/mscastanho/ebpf/btf"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/kconfig"
+	"github.com/mscastanho/ebpf/internal/sysenc"
 )
 
 // CollectionOptions control loading a collection into the kernel.

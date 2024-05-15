@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/testutils"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/testutils"
 )
 
 func TestDatasecResolveWorkaround(t *testing.T) {

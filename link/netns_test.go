@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/asm"
-	"github.com/cilium/ebpf/internal/testutils"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/asm"
+	"github.com/mscastanho/ebpf/internal/testutils"
 )
 
 func TestSkLookup(t *testing.T) {

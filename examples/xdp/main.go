@@ -17,11 +17,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/link"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/link"
 )
 
-//go:generate go run github.com/cilium/ebpf/cmd/bpf2go bpf xdp.c -- -I../headers
+//go:generate go run github.com/mscastanho/ebpf/cmd/bpf2go bpf xdp.c -- -I../headers
 
 func main() {
 	if len(os.Args) < 2 {

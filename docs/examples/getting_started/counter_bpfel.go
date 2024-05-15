@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cilium/ebpf"
+	"github.com/mscastanho/ebpf"
 )
 
 // loadCounter returns the embedded CollectionSpec for counter.

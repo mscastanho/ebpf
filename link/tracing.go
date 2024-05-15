@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/btf"
-	"github.com/cilium/ebpf/internal/sys"
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/btf"
+	"github.com/mscastanho/ebpf/internal/sys"
+	"github.com/mscastanho/ebpf/internal/unix"
 )
 
 type tracing struct {

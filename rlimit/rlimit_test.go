@@ -3,8 +3,8 @@ package rlimit
 import (
 	"testing"
 
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/unix"
 
 	qt "github.com/frankban/quicktest"
 )

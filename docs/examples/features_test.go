@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/features"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/features"
 )
 
 func DocDetectXDP() {

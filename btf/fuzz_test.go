@@ -7,7 +7,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cilium/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal"
 )
 
 func FuzzSpec(f *testing.F) {

@@ -7,11 +7,11 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/cilium/ebpf/asm"
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/sys"
-	"github.com/cilium/ebpf/internal/tracefs"
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf/asm"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/sys"
+	"github.com/mscastanho/ebpf/internal/tracefs"
+	"github.com/mscastanho/ebpf/internal/unix"
 )
 
 var (

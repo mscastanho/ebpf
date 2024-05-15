@@ -6,8 +6,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/testutils"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/testutils"
 	"github.com/google/go-cmp/cmp"
 
 	qt "github.com/frankban/quicktest"

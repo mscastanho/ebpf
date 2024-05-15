@@ -9,8 +9,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/testutils"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/testutils"
 	qt "github.com/frankban/quicktest"
 )
 

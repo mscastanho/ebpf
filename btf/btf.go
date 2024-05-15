@@ -12,8 +12,8 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/sys"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/sys"
 )
 
 const btfMagic = 0xeB9F

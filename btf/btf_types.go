@@ -7,7 +7,7 @@ import (
 	"io"
 	"unsafe"
 
-	"github.com/cilium/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal"
 )
 
 //go:generate go run golang.org/x/tools/cmd/stringer@latest -linecomment -output=btf_types_string.go -type=FuncLinkage,VarLinkage,btfKind

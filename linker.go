@@ -9,9 +9,9 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/cilium/ebpf/asm"
-	"github.com/cilium/ebpf/btf"
-	"github.com/cilium/ebpf/internal"
+	"github.com/mscastanho/ebpf/asm"
+	"github.com/mscastanho/ebpf/btf"
+	"github.com/mscastanho/ebpf/internal"
 )
 
 // handles stores handle objects to avoid gc cleanup

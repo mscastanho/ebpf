@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/epoll"
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/epoll"
+	"github.com/mscastanho/ebpf/internal/unix"
 )
 
 var (

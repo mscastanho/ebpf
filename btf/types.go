@@ -8,9 +8,9 @@ import (
 	"math"
 	"strings"
 
-	"github.com/cilium/ebpf/asm"
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/sys"
+	"github.com/mscastanho/ebpf/asm"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/sys"
 	"golang.org/x/exp/slices"
 )
 

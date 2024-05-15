@@ -3,8 +3,8 @@ package link
 import (
 	"fmt"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/internal/tracefs"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/internal/tracefs"
 )
 
 // TracepointOptions defines additional parameters that will be used

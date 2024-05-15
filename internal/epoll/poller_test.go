@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf/internal/unix"
 )
 
 func TestPoller(t *testing.T) {

@@ -6,11 +6,11 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/cilium/ebpf"
-	"github.com/cilium/ebpf/asm"
-	"github.com/cilium/ebpf/internal"
-	"github.com/cilium/ebpf/internal/sys"
-	"github.com/cilium/ebpf/internal/unix"
+	"github.com/mscastanho/ebpf"
+	"github.com/mscastanho/ebpf/asm"
+	"github.com/mscastanho/ebpf/internal"
+	"github.com/mscastanho/ebpf/internal/sys"
+	"github.com/mscastanho/ebpf/internal/unix"
 )
 
 // KprobeMultiOptions defines additional parameters that will be used

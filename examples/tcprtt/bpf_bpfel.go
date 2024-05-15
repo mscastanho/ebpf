@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cilium/ebpf"
+	"github.com/mscastanho/ebpf"
 )
 
 type bpfEvent struct {
